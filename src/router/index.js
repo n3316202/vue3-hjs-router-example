@@ -40,6 +40,11 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "num" */ "../views/ThreeView.vue"),
   },
+  {
+    path: "/bar/:id",
+    name: "bar",
+    component: () => import("../views/BarView.vue"),
+  },
 ];
 
 const router = createRouter({
