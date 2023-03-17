@@ -6,6 +6,11 @@
     <router-link to="/two">Two</router-link> |
     <router-link to="/three">Three</router-link> |
     <router-link :to="{ name: 'bar', params: { id: 123 } }">bar</router-link> |
+    <router-link to="/bar/1234">bar2</router-link> |
+    <router-link :to="{ name: 'bar3', params: { id: 123, name: '홍길동' } }"
+      >bar3</router-link
+    >
+    |
   </nav>
   <router-view />
 </template>

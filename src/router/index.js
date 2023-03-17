@@ -45,6 +45,11 @@ const routes = [
     name: "bar",
     component: () => import("../views/BarView.vue"),
   },
+  {
+    path: "/bar/:id/:name",
+    name: "bar3",
+    component: () => import("../views/BarView.vue"),
+  },
 ];
 
 const router = createRouter({
