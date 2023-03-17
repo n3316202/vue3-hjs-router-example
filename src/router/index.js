@@ -17,11 +17,24 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
   },
-  // {
-  //   path: "/about",
-  //   name: "about",
-  //   component: AboutView,
-  // },
+  {
+    path: "/one",
+    name: "One",
+    component: () =>
+      import(/* webpackChunkName: "num" */ "../views/OneView.vue"),
+  },
+  {
+    path: "/two",
+    name: "Two",
+    component: () =>
+      import(/* webpackChunkName: "num" */ "../views/TwoView.vue"),
+  },
+  {
+    path: "/three",
+    name: "Three",
+    component: () =>
+      import(/* webpackChunkName: "num" */ "../views/ThreeView.vue"),
+  },
 ];
 
 const router = createRouter({
