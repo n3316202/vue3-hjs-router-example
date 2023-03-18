@@ -11,6 +11,7 @@
       >bar3</router-link
     >
     |
+    <router-link to="/vuex">vuex 예제</router-link> |
   </nav>
   <router-view />
 </template>

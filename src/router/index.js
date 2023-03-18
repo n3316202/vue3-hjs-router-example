@@ -50,6 +50,11 @@ const routes = [
     name: "bar3",
     component: () => import("../views/BarView.vue"),
   },
+  {
+    path: "/vuex",
+    name: "vuex",
+    component: () => import("../views/vuex/StoreAccessView.vue"),
+  },
 ];
 
 const router = createRouter({
